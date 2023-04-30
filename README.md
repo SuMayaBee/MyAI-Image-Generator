@@ -21,8 +21,9 @@ This is an AI-powered image generator that uses OpenAI's API key to generate ima
 The App.js file in the src directory contains the code for the front-end of the application. Here's a detailed explanation of how it works:
 
 1. Import necessary dependencies:
-``` import { useState } from 'react' 
-    import Modal from './components/Modal'
+``` 
+import { useState } from 'react' 
+import Modal from './components/Modal'
 ```
 The useState hook is used to define state variables, while the Modal component is used to render the image upload modal.
 Define state variables using the useState hook:
