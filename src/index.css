@@ -1,0 +1,169 @@
+* {
+    font-family: sans-serif;
+
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    padding:0;
+    width: 100vw;
+    height: 100vh;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+}
+
+
+p {
+    font-weight: 200;
+    font-size: 14px;
+}
+
+.app {
+    width: 90vw;
+}
+
+.search-section {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px;
+}
+
+.surprise {
+    background-color: #ececf1;
+    color: #000;
+    border-radius: 5px;
+    font-weight: 600;
+    padding: 4px 12px;
+    margin: 0 0 2px 5px;
+
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 82, 0.15) 0 2px 4px;
+
+}
+
+.input-container input {
+    border: none;
+    padding: 13px 14px;
+    box-sizing: border-box;
+    font-size: 15px;
+    outline: none;
+    width: 90%;
+    font-weight: 200;
+}
+
+.input-container input::placeholder {
+    color: #cacaca;
+    font-weight: 200;
+}
+
+.input-container button {
+    border: none;
+    background-color: #fff;
+    border-left: 1px #cacaca solid;
+    color: #777;
+    font-weight: bold;
+    width: 10%;
+    cursor: pointer;
+}
+
+.input-container button:active {
+    background-color: #cacaca;
+}
+
+.image-section {
+   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 10px;
+
+}
+
+.image-section img {
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 556px) {
+    .image-section img {
+        max-width: 100%;
+    }
+}
+
+.extra-info {
+    text-align: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.15);
+    overflow: hidden;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+}
+
+.modal {
+    position: relative;
+    z-index: 100;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal button {
+    width: 100%;
+    padding: 20px;
+    border: none;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+}
+
+.modal button:active {
+    background-color: #fafafc;
+}
+
+.img-container {
+    height: 256px;
+    width: 256px;
+    overflow: hidden;
+}
+
+.larger-input-font {
+    font-size: 30px; /* Adjust the font size to your preference */
+}
