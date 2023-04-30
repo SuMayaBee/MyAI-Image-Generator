@@ -27,11 +27,3 @@ import Modal from './components/Modal'
 The useState hook is used to define state variables, while the Modal component is used to render the image upload modal.
 Define state variables using the useState hook:
 
-jsx
-Copy code
-const [images, setImages] = useState(null)
-const [value, setValue] = useState(null)
-const [error, setError] = useState(null)
-const [selectedImage, setSelectedImage] = useState(null)
-const [modalOpen, setModalOpen] = useState(false)
-These state variables are used to manage the generated images, user input, error messages, uploaded images, and whether or not the image upload modal is open.
