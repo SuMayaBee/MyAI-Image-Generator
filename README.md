@@ -1,4 +1,4 @@
-# AI Image Generator
+# MyAI Image Generator
 
 This is an AI-powered image generator that uses OpenAI's API key to generate images based on user input. You can either enter a description of the image you want to generate or upload an existing image to edit and create variations.
 
