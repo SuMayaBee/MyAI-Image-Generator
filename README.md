@@ -62,4 +62,40 @@ The `server.js` file is responsible for setting up the Express server, handling 
 - Method: POST
 - Description: Receives a request from the frontend to generate variations of an uploaded image. The OpenAI API is called with the uploaded image, and the generated variations are sent back to the frontend.
 
+# Getting Started
+
+These instructions will help you get a copy of the project up and running on your local machine for development and testing purposes.
+
+## Prerequisites
+
+- Node.js (v14.x or later recommended)
+- npm (v6.x or later recommended)
+- OpenAI API key (sign up for an API key at [https://beta.openai.com/signup/](https://beta.openai.com/signup/))
+
+## Installing
+
+1. Clone the repository:
+
+```
+   git clone https://github.com/yourusername/myai-image-generator.git
+```
+2. Install the required npm packages for the backend:
+
+```
+   cd myai-image-generator/backend
+   npm install
+```
+3. Set up the environment variables:
+
+   Create a `.env` file in the backend folder and add your OpenAI API key:
+```
+    API_KEY=your_openai_api_key
+```
+4. Install the required npm packages for the frontend:
+ ```
+   cd ../src
+   npm install
+```
+
+
 
