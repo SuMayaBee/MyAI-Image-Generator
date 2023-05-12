@@ -96,6 +96,47 @@ These instructions will help you get a copy of the project up and running on you
    cd ../src
    npm install
 ```
+5. Start the backend server:
+
+```
+   cd ../backend
+   node server.js
+```
+6. Start the frontend development server:
+
+```
+   cd ../src
+   npm start
+```
+
+The application should now be running at `http://localhost:3000`.
+
+## Usage
+
+MyAI-Image-Generator allows users to generate images based on a text prompt or by uploading an image. Users can either type in a description, use the "Surprise Me" button to generate a random prompt, or upload a 256x256 image for further editing.
+
+Generated images are displayed in a grid, with up to 4 images shown at once.
+
+## Application Components
+
+- `App.js`: The main application component, handling user input and interactions.
+- `Modal.js`: The modal component displayed when a user uploads an image, allowing them to confirm the image's dimensions before generating variations.
+- `index.css`: The global CSS file for the application.
+- `index.js`: The entry point for the React application.
+- `server.js`: The backend server file, handling API calls to the OpenAI API and image file uploads.
+
+## Contributing
+
+We welcome contributions to the MyAI-Image-Generator project! If you'd like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch with your changes.
+3. Submit a pull request.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
 
 
 
