@@ -17,14 +17,26 @@ This is an AI-powered image generator that uses OpenAI's API key to generate ima
 - Multer middleware for handling file uploads
 - Axios HTTP client library for making API requests
 
-## How it works
-The App.js file in the src directory contains the code for the front-end of the application. Here's a detailed explanation of how it works:
+# Frontend
 
-1. Import necessary dependencies:
-``` 
-import { useState } from 'react' 
-import Modal from './components/Modal'
-```
-The useState hook is used to define state variables, while the Modal component is used to render the image upload modal.
-Define state variables using the useState hook:
+The frontend is built using React, with the main application component in `App.js`. The `Modal.js` file contains the modal component displayed when a user uploads an image.
+
+## App.js
+
+`App.js` handles user input and interactions. Users can:
+
+- Enter a text prompt
+- Use the "Surprise Me" button to generate a random prompt
+- Upload an image for further editing
+
+The `getImages()` function sends a POST request to the backend, which then makes a call to the OpenAI API to generate the images.
+
+## Modal.js
+
+`Modal.js` contains the modal component displayed when a user uploads an image. The user can confirm the image's dimensions before generating variations. The `checkSize()` function verifies if the image is 256x256 pixels, and if it is, the `generateVariations()` function is called.
+
+## index.css and index.js
+
+`index.css` contains the global CSS styles for the application, while `index.js` is the entry point for the React application.
+
 
