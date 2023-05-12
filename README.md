@@ -39,4 +39,27 @@ The `getImages()` function sends a POST request to the backend, which then makes
 
 `index.css` contains the global CSS styles for the application, while `index.js` is the entry point for the React application.
 
+# Backend
+
+The backend is built using Node.js, Express, and the OpenAI API. The backend server file, `server.js`, handles API calls to the OpenAI API and image file uploads.
+
+## server.js
+
+The `server.js` file is responsible for setting up the Express server, handling CORS, and processing requests from the frontend. The following endpoints are defined:
+
+### `/images`
+
+- Method: POST
+- Description: Receives a text prompt from the frontend and sends a request to the OpenAI API to generate images. The generated images are then sent back to the frontend.
+
+### `/upload`
+
+- Method: POST
+- Description: Handles image file uploads using the multer middleware for handling multipart/form-data content types.
+
+### `/variations`
+
+- Method: POST
+- Description: Receives a request from the frontend to generate variations of an uploaded image. The OpenAI API is called with the uploaded image, and the generated variations are sent back to the frontend.
+
 
