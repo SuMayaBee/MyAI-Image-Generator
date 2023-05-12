@@ -8,6 +8,8 @@ This is an AI-powered image generator that uses OpenAI's API key to generate ima
 2. Alternatively, click on the "Surprise me" option to generate a random image.
 3. To upload an image for editing, click on "Upload an image" and select your image file. After uploading, click on "Generate" to create variations.
 
+Generated images are displayed in a grid, with up to 4 images shown at once.
+
 ## Requirements
 
 - OpenAI API key
@@ -111,11 +113,6 @@ These instructions will help you get a copy of the project up and running on you
 
 The application should now be running at `http://localhost:3000`.
 
-## Usage
-
-MyAI-Image-Generator allows users to generate images based on a text prompt or by uploading an image. Users can either type in a description, use the "Surprise Me" button to generate a random prompt, or upload a 256x256 image for further editing.
-
-Generated images are displayed in a grid, with up to 4 images shown at once.
 
 ## Application Components
 
