@@ -10,6 +10,16 @@ This is an AI-powered image generator that uses OpenAI's API key to generate ima
 
 Generated images are displayed in a grid, with up to 4 images shown at once.
 
+
+
+https://github.com/Sumaiya-369/MyAI-Image-Generator/assets/126413802/eae96d04-c138-475a-8993-90886689a438
+
+
+
+https://github.com/Sumaiya-369/MyAI-Image-Generator/assets/126413802/f80beb9a-983b-43e8-98f8-bf77a03ddef3
+
+
+
 ## Requirements
 
 - OpenAI API key
